@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Docker and Docker Compose for frontend and Node.js development
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), but it doesn't matter. Whether you have a build step for your backend code, or you bundle your frontend application, the goals are similar when using Docker:
+
+1. For development, reload code when you modify it locally to test the changes
+1. Isolate container and host node_modules, so native dependencies don't mix
+1. For production, use a lightweight container with minimal dependencies
+
+## Use Docker
+
+    # build the image
+    docker build -t docker-compose-node .
+
+    # run the container
+    docker run -it --rm -p 8080:80 docker-compose-node
 
 ## Available Scripts
 
