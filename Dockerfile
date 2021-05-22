@@ -2,7 +2,6 @@ FROM node:16.1.0-buster AS builder
 
 WORKDIR /app
 
-# Yarn
 COPY package.json /app/
 
 # with Yarn
