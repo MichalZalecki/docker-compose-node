@@ -2,6 +2,8 @@
 
 This repo contains a minimal Docker setup with reasonable defaults for development with Node.js.
 
+**Read the article that explains more about optimizations and isolating host's node modules from the container: https://michalzalecki.com/docker-compose-node/**
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), but it doesn't matter. Whether you have a build step for your backend code, or you bundle your frontend application, the goals are similar when using Docker:
 
 1. For development, reload code when you modify it locally to test the changes (`npm run start`)
