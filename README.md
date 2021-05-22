@@ -26,7 +26,7 @@ For production
 For development
 
     # build image and run the container
-    docker compose up --build
+    docker compose up -V --build
 
     # execute command in running docker container
     docker compose exec app bash
